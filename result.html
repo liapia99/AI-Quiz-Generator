@@ -1,0 +1,23 @@
+{% for q in quiz %}
+  <div>
+    <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+    {% for val, label in q.options %}
+      <p style="color:
+          {% if val == q.user_answer and val == q.correct %}green
+          {% elif val == q.user_answer and val != q.correct %}red
+          {% elif val == q.correct and val != q.user_answer %}green
+          {% else %}black
+          {% endif %};">
+        {{ val }}. {{ label }}
+        {% if val == q.user_answer and val == q.correct %}✔{% endif %}
+        {% if val == q.user_answer and val != q.correct %}✘{% endif %}
+      </p>
+    {% endfor %}
+
+    {% if q.user_answer != q.correct %}
+      <p><em>Correct answer: {{ q.correct }}</em></p>
+    {% endif %}
+
+    <hr>
+  </div>
+{% endfor %}

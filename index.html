@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Quiz Generator</title>
+</head>
+<body>
+  <h1>PDF Quiz Maker Using AI</h1>
+  <h1>Made by Team DJK</h1>
+  <h1>Spring 2025 - CS-338</h1>
+  <h1>Final Project</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <label>Upload PDF:</label>
+    <input type="file" name="pdf" accept="application/pdf" required><br><br>
+  
+    <label>Number of Questions:</label>
+    <input type="number" name="num_questions" min="1" max="20" required><br><br>
+  
+    <label>Question Type:</label>
+    <select name="question_type">
+      <option value="multiple_choice">Multiple Choice</option>
+      <option value="true_false">True/False</option>
+    </select><br><br>
+  
+    <button type="submit">Generate Quiz</button>
+  </form>
+  </form>
+
+
+</body>
+</html>
