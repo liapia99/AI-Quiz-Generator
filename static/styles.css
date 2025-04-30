@@ -1,1 +1,125 @@
 
+body {
+    background-color: #2F4256; 
+    color: #F5EFEB;            
+    font-family: monospace;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  .question-block {
+    background-color: rgba(245, 239, 235, 0.05); 
+    border: 1px solid #F5EFEB;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  .question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    margin-left: 20px;
+  }
+  
+  .correct-answer {
+    color: green;
+  }
+  
+  .wrong-answer {
+    color: red;
+  }
+  
+  .neutral-answer {
+    color: #F5EFEB;
+  }
+  
+  .explanation {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #F5EFEB;
+    margin-top: 20px;
+  }
+
+  .summary {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #F5EFEB;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin: 10px 0;
+    color: #F5EFEB;
+  }
+  
+  .form-block {
+    background-color: rgba(245, 239, 235, 0.05);
+    border: 1px solid #F5EFEB;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .form-block label {
+    font-weight: bold;
+    color: #F5EFEB;
+  }
+  
+  input[type="file"],
+  input[type="number"],
+  select {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  button {
+    background-color: #F5EFEB;
+    color: #2F4256;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd2c8;
+  }
+  .top-right {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  .top-right h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #F5EFEB;
+  }
+
+  .selected-answer {
+    font-weight: bold;
+    font-size: 14px;
+  }
