@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>AI Quiz Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-  <h1>PDF Quiz Maker Using AI</h1>
-  <h1>Made by Team DJK</h1>
-  <h1>Spring 2025 - CS-338</h1>
-  <h1>Final Project</h1>
 
-  <form method="POST" enctype="multipart/form-data">
-    <label>Upload PDF:</label>
-    <input type="file" name="pdf" accept="application/pdf" required><br><br>
+  <h1>AI Quiz Maker</h1>
   
-    <label>Number of Questions:</label>
-    <input type="number" name="num_questions" min="1" max="20" required><br><br>
+  <div class="top-right">
+    <h3>Team DJK</h3>
+    <h3>Spring 2025 </h3>
+  </div>
   
-    <label>Question Type:</label>
-    <select name="question_type">
+
+  <form method="POST" enctype="multipart/form-data" class="form-block">
+    <label for="pdf">Upload PDF:</label><br>
+    <input type="file" id="pdf" name="pdf" accept="application/pdf" required><br><br>
+
+    <label for="num_questions">Number of Questions:</label><br>
+    <input type="number" id="num_questions" name="num_questions" min="1" max="20" required><br><br>
+
+    <label for="question_type">Question Type:</label><br>
+    <select id="question_type" name="question_type">
       <option value="multiple_choice">Multiple Choice</option>
       <option value="true_false">True/False</option>
     </select><br><br>
-  
+
     <button type="submit">Generate Quiz</button>
   </form>
-  </form>
-
 
 </body>
 </html>
